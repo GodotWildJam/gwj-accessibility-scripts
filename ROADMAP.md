@@ -6,9 +6,9 @@ Here is a list, by category, of the desired scripts for all Godot Engine users t
 
 ## Basic ##
 
-[] Allows controls be remapped/reconfigured
-[] Ensure controls are as simple as possible, or provide a simpler alternative.
-[] Ensure that all areas of the user interface can be accessed using the same input method as the gameplay
-[] Include an option to adjust the sensitive of controls
-[] Ensure interactive elements/virtual controls are large and well spaced
-[] Include toggle/slider for any haptics
+1. [] Allows controls be remapped/reconfigured
+2. [] Ensure controls are as simple as possible, or provide a simpler alternative.
+3. [] Ensure that all areas of the user interface can be accessed using the same input method as the gameplay
+4. [] Include an option to adjust the sensitive of controls
+5. [] Ensure interactive elements/virtual controls are large and well spaced
+6. [] Include toggle/slider for any haptics
