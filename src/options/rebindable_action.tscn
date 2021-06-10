@@ -1,0 +1,16 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://src/options/rebindable_action.gd" type="Script" id=1]
+
+[node name="Button" type="Button"]
+margin_right = 21.0
+margin_bottom = 20.0
+toggle_mode = true
+text = "Space"
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+action = "ui_select"
+
+[connection signal="pressed" from="." to="." method="_on_Button_pressed"]
