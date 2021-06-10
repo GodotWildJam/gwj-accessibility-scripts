@@ -3,7 +3,7 @@
 ## Basic ##
 
 - [x] Allows controls be remapped/reconfigured
-- [ ] Ensure controls are as simple as possible, or provide a simpler alternative.
+- [ ] [Ensure controls are as simple as possible, or provide a simpler alternative.](https://github.com/GodotWildJam/gwj-accessibility-scripts/issues/2)
 - [ ] Ensure that all areas of the user interface can be accessed using the same input method as the gameplay
 - [ ] Include an option to adjust the sensitive of controls
 - [ ] Ensure interactive elements/virtual controls are large and well spaced
