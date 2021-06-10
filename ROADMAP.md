@@ -4,7 +4,7 @@ Here is a list, by category, of the desired scripts for all Godot Engine users t
 
 If you have a better resource, or format suggestion, please let us know. We are aware that not every use case will apply to all games.
 
-## Motor 
+## [Motor](https://github.com/GodotWildJam/gwj-accessibility-scripts/blob/main/Motor/MOTOR.md)
 
 - [ ] Basic
 - [ ] Intermediate
