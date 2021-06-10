@@ -10,7 +10,7 @@ If you have a better resource, or format suggestion, please let us know. We are 
 - [ ] Intermediate
 - [ ] Advanced
 
-## Cognitive
+## [Cognitive](https://github.com/GodotWildJam/gwj-accessibility-scripts/blob/main/Cognitive/COGNITIVE.md)
 
 - [ ] Basic
 - [ ] Intermediate
