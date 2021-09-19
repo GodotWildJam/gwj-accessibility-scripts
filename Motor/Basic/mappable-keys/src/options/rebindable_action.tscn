@@ -13,4 +13,4 @@ __meta__ = {
 }
 action = "ui_select"
 
-[connection signal="pressed" from="." to="." method="_on_Button_pressed"]
+[connection signal="toggled" from="." to="." method="_on_Button_toggled"]
