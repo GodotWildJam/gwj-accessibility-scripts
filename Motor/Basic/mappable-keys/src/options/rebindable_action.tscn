@@ -1,16 +1,13 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=2 format=3 uid="uid://ce2r6mevl3dp2"]
 
-[ext_resource path="res://src/options/rebindable_action.gd" type="Script" id=1]
+[ext_resource type="Script" path="res://src/options/rebindable_action.gd" id="1"]
 
 [node name="Button" type="Button"]
-margin_right = 21.0
-margin_bottom = 20.0
+offset_right = 21.0
+offset_bottom = 20.0
 toggle_mode = true
 text = "Space"
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
+script = ExtResource("1")
 action = "ui_select"
 
 [connection signal="toggled" from="." to="." method="_on_Button_toggled"]

@@ -1,17 +1,17 @@
 extends Button
 
 # Set this string to the name of the action in the InputMap
-export(String) var action
+@export var action: String
 
 
 func _ready():
-	_update_button_text(InputMap.get_action_list(action)[0])
+	_update_button_text(InputMap.action_get_events(action)[0])
 	
 
 func _input(input_event: InputEvent) -> void:
-	if pressed and not input_event is InputEventMouseMotion:
+	if button_pressed and not input_event is InputEventMouseMotion:
 		if not input_event.is_pressed():
-			pressed = false
+			set_pressed_no_signal(false)
 			release_focus()
 			InputMap.action_erase_events(action)
 			InputMap.action_add_event(action, input_event)
@@ -21,11 +21,11 @@ func _input(input_event: InputEvent) -> void:
 
 func _update_button_text(input_event: InputEvent) -> void:
 	if input_event is InputEventMouseButton:
-		if input_event.button_index == BUTTON_LEFT:
+		if input_event.button_index == MOUSE_BUTTON_LEFT:
 			text = "Mouse Left"
-		elif input_event.button_index == BUTTON_RIGHT:
+		elif input_event.button_index == MOUSE_BUTTON_RIGHT:
 			text = "Mouse Right"
-		elif input_event.button_index == BUTTON_MIDDLE:
+		elif input_event.button_index == MOUSE_BUTTON_MIDDLE:
 			text = "Mouse Middle"
 	else:
 		text = input_event.as_text()
