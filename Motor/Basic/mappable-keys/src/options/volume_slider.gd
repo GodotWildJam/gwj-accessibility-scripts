@@ -26,4 +26,3 @@ func _on_VolumeSlider_value_changed(value: float) -> void:
 	if _feedback_sound != null:
 		if not _feedback_sound.is_playing():
 			_feedback_sound.play()
-
