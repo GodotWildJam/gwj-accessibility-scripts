@@ -1,6 +1,6 @@
 # Road Map 
 
-Here is a list of accessibility features and tools desired for the repo. These are inspired by the list in the [Game Accessibility Guidelines](http://gameaccessibilityguidelines.com/full-list/), and meant to help developers more easily adhere to them. 
+Here is a list of accessibility features and tools desired for the repo. These are inspired by the list in the [Game Accessibility Guidelines](http://gameaccessibilityguidelines.com/full-list/) used by the game jam. The tools here are meant to assist developers to adhere to those guidelines. 
 
 ### Goals
 
@@ -8,7 +8,7 @@ We'd like to provide developers with snippets of code or scenes to plug into the
 
 ### Considerations
 
-There is no 1-to-1 feature for every item listed in the guidelines. Each one in the roadmap is meant to provide developers with the means of meeting one or more of the guidlines, while remaining flexible enough to fit more than one use-case.
+There is no 1-to-1 feature for every item listed in the guidelines. Each one in the roadmap is meant to provide developers with the means of meeting one or more of the guidelines, while remaining flexible enough to fit more than one use-case.
 
 ## Basic
 
@@ -27,5 +27,6 @@ There is no 1-to-1 feature for every item listed in the guidelines. Each one in 
 - [ ] Keep settings persistent between runs.
 
 ## Advanced
+
 - [ ] Customizable tutorial popup window.
 - [ ] Customizable control layout window.
