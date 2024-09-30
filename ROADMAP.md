@@ -1,41 +1,32 @@
 # Road Map 
 
-Here is a list, by category, of the desired scripts for all Godot Engine users to incorporate and enjoy. Each category is broken down into basic, intermediate, and advanced per the [Game Accessibility Guidelines](http://gameaccessibilityguidelines.com/full-list/) site that we use in the game jam. 
+Here is a list of accessibility features and tools desired for the repo. These are inspired by the list in the [Game Accessibility Guidelines](http://gameaccessibilityguidelines.com/full-list/) used by the game jam. The tools here are meant to assist developers to adhere to those guidelines. 
 
-If you have a better resource, or format suggestion, please let us know. We are aware that not every use case will apply to all games.
+### Goals
 
-## [Motor](https://github.com/GodotWildJam/gwj-accessibility-scripts/blob/main/Motor/MOTOR.md)
+We'd like to provide developers with snippets of code or scenes to plug into their projects. However, we'd also like to provide a list of alternative sources, too. In some cases, this can be preferred to adding more community developed and managed code.
 
-- [ ] Basic
-- [ ] Intermediate
-- [ ] Advanced
+### Considerations
 
-## [Cognitive](https://github.com/GodotWildJam/gwj-accessibility-scripts/blob/main/Cognitive/COGNITIVE.md)
+There is no 1-to-1 feature for every item listed in the guidelines. Each one in the roadmap is meant to provide developers with the means of meeting one or more of the guidelines, while remaining flexible enough to fit more than one use-case.
 
-- [ ] Basic
-- [ ] Intermediate
-- [ ] Advanced
+## Basic
 
-## Vision
+- [x] Input remapping UI for single inputs.
+- [x] Adjustable slider for controlling audio output decibals.
+- [ ] Checkboxes for adjusting settings with boolean vaues (ie. muting audio channel)
+- [ ] Adjustable slider for controlling sensitivity of settings with continuous values (ie. haptics).
+- [ ] Provide a list of easily readable fonts.
+- [ ] Provide color palettes, textures, or examples to assist with developing for color blindness or vision impairment.
 
-- [ ] Basic
-- [ ] Intermediate
-- [ ] Advanced
+## Intermediate
 
-## Hearing
+- [ ] Drop-down menu for adjusting settings with discrete values (ie. resolution).
+- [ ] Input remapping UI for mutiple inputs.
+- [ ] Script for detecting game controllers.
+- [ ] Keep settings persistent between runs.
 
-- [ ] Basic
-- [ ] Intermediate
-- [ ] Advanced
+## Advanced
 
-## Speech
-
-- [ ] Basic
-- [ ] Intermediate
-- [ ] Advanced
-
-## General
-
-- [ ] Basic
-- [ ] Intermediate
-- [ ] Advanced
+- [ ] Customizable tutorial popup window.
+- [ ] Customizable control layout window.
