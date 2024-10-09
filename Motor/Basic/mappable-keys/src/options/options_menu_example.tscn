@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://glhpumkx46qg"]
+[gd_scene load_steps=5 format=3 uid="uid://glhpumkx46qg"]
 
 [ext_resource type="PackedScene" uid="uid://cxch7x2j3wv3p" path="res://src/options/volume_slider.tscn" id="1"]
 [ext_resource type="PackedScene" uid="uid://ce2r6mevl3dp2" path="res://src/options/rebindable_action.tscn" id="2"]
 [ext_resource type="AudioStream" uid="uid://nb5bufmvmchf" path="res://assets/feedback_sound.wav" id="3"]
+[ext_resource type="PackedScene" uid="uid://cf00wkvfngqp2" path="res://src/options/mute_button.tscn" id="4_n5cma"]
 
 [node name="MarginContainer" type="MarginContainer"]
 anchors_preset = 15
@@ -97,5 +98,16 @@ feedback_sound_path = NodePath("AudioStreamPlayer")
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="HotkeysContainer/VolumeContainer/VolumeSlider"]
 stream = ExtResource("3")
+
+[node name="MuteContainer" type="HBoxContainer" parent="HotkeysContainer/VolumeContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="HotkeysContainer/VolumeContainer/MuteContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Mute"
+
+[node name="MuteButton" parent="HotkeysContainer/VolumeContainer/MuteContainer" instance=ExtResource("4_n5cma")]
+layout_mode = 2
 
 [editable path="HotkeysContainer/GridContainer/HBoxContainer/RebindableAction"]
