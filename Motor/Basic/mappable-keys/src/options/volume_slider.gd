@@ -1,4 +1,4 @@
-extends HSlider
+extends Slider
 
 const AUDIO_CONFIG_SECTION = "Audio"
 
