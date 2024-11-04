@@ -9,5 +9,3 @@ toggle_mode = true
 text = "Space"
 script = ExtResource("1")
 action = "ui_select"
-
-[connection signal="toggled" from="." to="." method="_on_Button_toggled"]

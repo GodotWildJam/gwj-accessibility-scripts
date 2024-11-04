@@ -12,6 +12,8 @@ func _ready() -> void:
 	var config_value = Config.get_config(AUDIO_CONFIG_SECTION, MUTE_BUS_PREFIX % bus_name, false)
 	button_pressed = config_value
 	_set_mute(config_value)
+	if not toggled.is_connected(_on_toggled):
+		toggled.connect(_on_toggled)
 
 func _set_mute(muted: bool) -> void:
 	AudioServer.set_bus_mute(_bus_index, muted)
