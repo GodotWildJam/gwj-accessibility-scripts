@@ -1,3 +1,4 @@
+class_name VolumeSlider
 extends Slider
 
 const AUDIO_CONFIG_SECTION = "Audio"

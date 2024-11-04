@@ -1,3 +1,4 @@
+class_name RebindableActionButton
 extends Button
 
 # Set this string to the name of the action in the InputMap

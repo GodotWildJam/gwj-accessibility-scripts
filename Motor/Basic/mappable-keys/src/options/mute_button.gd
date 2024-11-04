@@ -1,3 +1,4 @@
+class_name MuteButton
 extends CheckBox
 
 const AUDIO_CONFIG_SECTION = "Audio"
