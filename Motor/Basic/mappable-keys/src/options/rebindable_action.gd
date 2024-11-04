@@ -1,3 +1,4 @@
+class_name RebindableActionButton
 extends Button
 
 # Set this string to the name of the action in the InputMap
@@ -6,7 +7,8 @@ extends Button
 
 func _ready():
 	_update_button_text(InputMap.action_get_events(action)[0])
-	
+	if not toggled.is_connected(_on_toggled):
+		toggled.connect(_on_toggled)
 
 func _input(input_event: InputEvent) -> void:
 	if button_pressed and not input_event is InputEventMouseMotion:
@@ -31,6 +33,6 @@ func _update_button_text(input_event: InputEvent) -> void:
 		text = input_event.as_text()
 
 
-func _on_Button_toggled(button_pressed):
+func _on_toggled(button_pressed):
 	if button_pressed:
 		text = "press a key..."

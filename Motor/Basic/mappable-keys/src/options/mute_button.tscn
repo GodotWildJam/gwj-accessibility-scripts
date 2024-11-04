@@ -4,5 +4,3 @@
 
 [node name="MuteButton" type="CheckBox"]
 script = ExtResource("1_1reos")
-
-[connection signal="toggled" from="." to="." method="_on_toggled"]
