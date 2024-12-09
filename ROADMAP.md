@@ -24,7 +24,7 @@ There is no 1-to-1 feature for every item listed in the guidelines. Each one in 
 - [ ] Drop-down menu for adjusting settings with discrete values (ie. resolution).
 - [ ] Input remapping UI for mutiple inputs.
 - [ ] Script for detecting game controllers.
-- [ ] Keep settings persistent between runs.
+- [x] Keep settings persistent between runs.
 
 ## Advanced
 
