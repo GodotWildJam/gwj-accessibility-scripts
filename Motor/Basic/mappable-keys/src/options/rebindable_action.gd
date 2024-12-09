@@ -1,12 +1,15 @@
 class_name RebindableActionButton
 extends Button
 
+const INPUT_CONFIG_SECTION = "Input"
+
 # Set this string to the name of the action in the InputMap
 @export var action: String
 
-
 func _ready():
-	_update_button_text(InputMap.action_get_events(action)[0])
+	var default_input = InputMap.action_get_events(action)[0]
+	var config_value = Config.get_config(INPUT_CONFIG_SECTION, action, default_input)
+	_update_button_text(config_value)
 	if not toggled.is_connected(_on_toggled):
 		toggled.connect(_on_toggled)
 
@@ -18,8 +21,8 @@ func _input(input_event: InputEvent) -> void:
 			InputMap.action_erase_events(action)
 			InputMap.action_add_event(action, input_event)
 			_update_button_text(input_event)
-			grab_focus()   
-
+			Config.set_config(INPUT_CONFIG_SECTION, action, input_event)
+			grab_focus()
 
 func _update_button_text(input_event: InputEvent) -> void:
 	if input_event is InputEventMouseButton:
@@ -31,7 +34,6 @@ func _update_button_text(input_event: InputEvent) -> void:
 			text = "Mouse Middle"
 	else:
 		text = input_event.as_text()
-
 
 func _on_toggled(button_pressed):
 	if button_pressed:
