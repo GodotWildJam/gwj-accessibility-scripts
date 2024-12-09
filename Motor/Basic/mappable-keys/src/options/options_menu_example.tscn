@@ -29,60 +29,60 @@ layout_mode = 2
 
 [node name="Label" type="Label" parent="HotkeysContainer/GridContainer/UiUp"]
 layout_mode = 2
-text = "UI Up:"
+text = "Move Up:"
 
 [node name="RebindableAction" parent="HotkeysContainer/GridContainer/UiUp" instance=ExtResource("2")]
 layout_mode = 2
 keep_pressed_outside = true
 text = "Up"
-action = "ui_up"
+action = "move_up"
 
 [node name="UiDown" type="HBoxContainer" parent="HotkeysContainer/GridContainer"]
 layout_mode = 2
 
 [node name="Label" type="Label" parent="HotkeysContainer/GridContainer/UiDown"]
 layout_mode = 2
-text = "UI Down:"
+text = "Move Down:"
 
 [node name="RebindableAction" parent="HotkeysContainer/GridContainer/UiDown" instance=ExtResource("2")]
 layout_mode = 2
 text = "Down"
-action = "ui_down"
+action = "move_down"
 
 [node name="UILeft" type="HBoxContainer" parent="HotkeysContainer/GridContainer"]
 layout_mode = 2
 
 [node name="Label" type="Label" parent="HotkeysContainer/GridContainer/UILeft"]
 layout_mode = 2
-text = "UI Left:"
+text = "Move Left:"
 
 [node name="RebindableAction" parent="HotkeysContainer/GridContainer/UILeft" instance=ExtResource("2")]
 layout_mode = 2
 text = "Left"
-action = "ui_left"
+action = "move_left"
 
 [node name="UIRight" type="HBoxContainer" parent="HotkeysContainer/GridContainer"]
 layout_mode = 2
 
 [node name="Label" type="Label" parent="HotkeysContainer/GridContainer/UIRight"]
 layout_mode = 2
-text = "UI Right:"
+text = "Move Right:"
 
 [node name="RebindableAction" parent="HotkeysContainer/GridContainer/UIRight" instance=ExtResource("2")]
 layout_mode = 2
 text = "Right"
-action = "ui_right"
+action = "move_right"
 
 [node name="HBoxContainer" type="HBoxContainer" parent="HotkeysContainer/GridContainer"]
 layout_mode = 2
 
 [node name="Label" type="Label" parent="HotkeysContainer/GridContainer/HBoxContainer"]
 layout_mode = 2
-text = "UI Accept:"
+text = "Interact:"
 
 [node name="RebindableAction" parent="HotkeysContainer/GridContainer/HBoxContainer" instance=ExtResource("2")]
 layout_mode = 2
-action = "ui_accept"
+action = "interact"
 
 [node name="VolumeContainer" type="VBoxContainer" parent="HotkeysContainer"]
 layout_mode = 2
