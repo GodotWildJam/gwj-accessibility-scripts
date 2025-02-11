@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://ce2r6mevl3dp2"]
 
-[ext_resource type="Script" path="res://src/options/rebindable_action.gd" id="1"]
+[ext_resource type="Script" path="res://addons/gwj_accessibility_scripts/options/rebindable_action.gd" id="1"]
 
 [node name="Button" type="Button"]
 offset_right = 21.0

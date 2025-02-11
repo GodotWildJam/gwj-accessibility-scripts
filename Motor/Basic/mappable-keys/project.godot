@@ -15,6 +15,10 @@ run/main_scene="res://src/options/options_menu_example.tscn"
 config/features=PackedStringArray("4.3")
 config/icon="res://icon.png"
 
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/gwj_accessibility_scripts/plugin.cfg")
+
 [input]
 
 move_up={

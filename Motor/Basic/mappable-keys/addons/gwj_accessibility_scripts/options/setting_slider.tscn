@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://dh5kn8bfiy1wn"]
 
-[ext_resource type="Script" path="res://src/options/setting_slider.gd" id="1_g864b"]
+[ext_resource type="Script" path="res://addons/gwj_accessibility_scripts/options/setting_slider.gd" id="1_g864b"]
 
 [node name="SettingSlider" type="HSlider"]
 offset_right = 106.0
