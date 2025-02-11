@@ -15,14 +15,14 @@ There is no 1-to-1 feature for every item listed in the guidelines. Each one in 
 - [x] Input remapping UI for single inputs.
 - [x] Adjustable slider for controlling audio output decibals.
 - [x] Checkboxes for adjusting settings with boolean vaues (ie. muting audio channel)
-- [ ] Adjustable slider for controlling sensitivity of settings with continuous values (ie. haptics).
+- [x] Adjustable slider for controlling sensitivity of settings with continuous values (ie. haptics).
 - [ ] Provide a list of easily readable fonts.
 - [ ] Provide color palettes, textures, or examples to assist with developing for color blindness or vision impairment.
 
 ## Intermediate
 
 - [ ] Drop-down menu for adjusting settings with discrete values (ie. resolution).
-- [ ] Input remapping UI for mutiple inputs.
+- [ ] Input remapping UI for multiple inputs.
 - [ ] Script for detecting game controllers.
 - [x] Keep settings persistent between runs.
 
