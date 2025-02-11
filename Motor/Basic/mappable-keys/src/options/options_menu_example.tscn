@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=3 uid="uid://glhpumkx46qg"]
+[gd_scene load_steps=6 format=3 uid="uid://glhpumkx46qg"]
 
 [ext_resource type="PackedScene" uid="uid://cxch7x2j3wv3p" path="res://src/options/volume_slider.tscn" id="1"]
 [ext_resource type="PackedScene" uid="uid://ce2r6mevl3dp2" path="res://src/options/rebindable_action.tscn" id="2"]
 [ext_resource type="AudioStream" uid="uid://nb5bufmvmchf" path="res://assets/feedback_sound.wav" id="3"]
 [ext_resource type="PackedScene" uid="uid://cf00wkvfngqp2" path="res://src/options/mute_button.tscn" id="4_n5cma"]
+[ext_resource type="PackedScene" uid="uid://dh5kn8bfiy1wn" path="res://src/options/setting_slider.tscn" id="5_e2f0x"]
 
 [node name="MarginContainer" type="MarginContainer"]
 anchors_preset = 15
@@ -109,5 +110,51 @@ text = "Mute"
 
 [node name="MuteButton" parent="HotkeysContainer/VolumeContainer/MuteContainer" instance=ExtResource("4_n5cma")]
 layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="HotkeysContainer"]
+layout_mode = 2
+
+[node name="Label2" type="Label" parent="HotkeysContainer/VBoxContainer"]
+layout_mode = 2
+text = "Generic Examples"
+
+[node name="HSeparator" type="HSeparator" parent="HotkeysContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Label4" type="Label" parent="HotkeysContainer/VBoxContainer"]
+layout_mode = 2
+text = "Game Difficulty"
+
+[node name="SettingSlider" parent="HotkeysContainer/VBoxContainer" instance=ExtResource("5_e2f0x")]
+layout_mode = 2
+max_value = 2.0
+step = 0.5
+value = 1.0
+config_section = &"Game"
+config_key = &"difficulty"
+
+[node name="Label3" type="Label" parent="HotkeysContainer/VBoxContainer"]
+layout_mode = 2
+text = "Input Sensitivity"
+
+[node name="SettingSlider2" parent="HotkeysContainer/VBoxContainer" instance=ExtResource("5_e2f0x")]
+layout_mode = 2
+max_value = 2.0
+step = 0.5
+value = 1.0
+config_section = &"Input"
+config_key = &"sensitivity"
+
+[node name="Label5" type="Label" parent="HotkeysContainer/VBoxContainer"]
+layout_mode = 2
+text = "Brightness Levels"
+
+[node name="SettingSlider3" parent="HotkeysContainer/VBoxContainer" instance=ExtResource("5_e2f0x")]
+layout_mode = 2
+max_value = 2.0
+step = 0.5
+value = 1.0
+config_section = &"Video"
+config_key = &"brightness"
 
 [editable path="HotkeysContainer/GridContainer/HBoxContainer/RebindableAction"]

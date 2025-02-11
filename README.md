@@ -13,7 +13,13 @@ For example, we could create a new scene for our menu with a root `Control` node
 
 Alternatively, one can instantiate an `HSlider` or `VSlider` and then attach the `volume_slider.gd` script to the node.
 
-After that, clicking on the new volume sider will open up its editable properties in the Inspector dock. Update these settings to the targetted audio bus for that volume slider.
+After that, clicking on the new volume slider will open up its editable properties in the Inspector dock. Update these settings to the targetted audio bus for that volume slider.
+
+### Setting Sliders
+
+The setting slider is similar to the volume slider. However, these sliders only set the setting's value in the config file. It is up to the developer to apply the user's desired settings in the application.
+
+Clicking on a slider will open up its editable properties in the Inspector dock. Update these settings to add a section and key name to your setting. Anything will do, and some examples are provided.
 
 ### Rebindable Actions
 
