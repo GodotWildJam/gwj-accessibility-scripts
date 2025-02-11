@@ -15,7 +15,7 @@ var _original_bus_volume : float = 1.0
 var _bus_index = 0
 
 func _ready() -> void:
-	if feedback_sound_path != null:
+	if not feedback_sound_path.is_empty():
 		_feedback_sound = get_node(feedback_sound_path)
 	_bus_index = AudioServer.get_bus_index(bus_name)
 	_original_bus_volume = db_to_linear(AudioServer.get_bus_volume_db(_bus_index))
