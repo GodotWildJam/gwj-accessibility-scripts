@@ -1,10 +1,10 @@
 [gd_scene load_steps=6 format=3 uid="uid://glhpumkx46qg"]
 
-[ext_resource type="PackedScene" uid="uid://cxch7x2j3wv3p" path="res://src/options/volume_slider.tscn" id="1"]
-[ext_resource type="PackedScene" uid="uid://ce2r6mevl3dp2" path="res://src/options/rebindable_action.tscn" id="2"]
-[ext_resource type="AudioStream" uid="uid://nb5bufmvmchf" path="res://assets/feedback_sound.wav" id="3"]
-[ext_resource type="PackedScene" uid="uid://cf00wkvfngqp2" path="res://src/options/mute_button.tscn" id="4_n5cma"]
-[ext_resource type="PackedScene" uid="uid://dh5kn8bfiy1wn" path="res://src/options/setting_slider.tscn" id="5_e2f0x"]
+[ext_resource type="PackedScene" uid="uid://ce2r6mevl3dp2" path="res://addons/gwj_accessibility_scripts/options/rebindable_action.tscn" id="1_ee5m2"]
+[ext_resource type="PackedScene" uid="uid://cxch7x2j3wv3p" path="res://addons/gwj_accessibility_scripts/options/volume_slider.tscn" id="2_vxtyn"]
+[ext_resource type="AudioStream" uid="uid://nb5bufmvmchf" path="res://examples/assets/feedback_sound.wav" id="3_vlk37"]
+[ext_resource type="PackedScene" uid="uid://cf00wkvfngqp2" path="res://addons/gwj_accessibility_scripts/options/mute_button.tscn" id="4_sokce"]
+[ext_resource type="PackedScene" uid="uid://dh5kn8bfiy1wn" path="res://addons/gwj_accessibility_scripts/options/setting_slider.tscn" id="5_jc3wj"]
 
 [node name="MarginContainer" type="MarginContainer"]
 anchors_preset = 15
@@ -32,7 +32,7 @@ layout_mode = 2
 layout_mode = 2
 text = "Move Up:"
 
-[node name="RebindableAction" parent="HotkeysContainer/GridContainer/UiUp" instance=ExtResource("2")]
+[node name="RebindableAction" parent="HotkeysContainer/GridContainer/UiUp" instance=ExtResource("1_ee5m2")]
 layout_mode = 2
 keep_pressed_outside = true
 text = "Up"
@@ -45,7 +45,7 @@ layout_mode = 2
 layout_mode = 2
 text = "Move Down:"
 
-[node name="RebindableAction" parent="HotkeysContainer/GridContainer/UiDown" instance=ExtResource("2")]
+[node name="RebindableAction" parent="HotkeysContainer/GridContainer/UiDown" instance=ExtResource("1_ee5m2")]
 layout_mode = 2
 text = "Down"
 action = "move_down"
@@ -57,7 +57,7 @@ layout_mode = 2
 layout_mode = 2
 text = "Move Left:"
 
-[node name="RebindableAction" parent="HotkeysContainer/GridContainer/UILeft" instance=ExtResource("2")]
+[node name="RebindableAction" parent="HotkeysContainer/GridContainer/UILeft" instance=ExtResource("1_ee5m2")]
 layout_mode = 2
 text = "Left"
 action = "move_left"
@@ -69,7 +69,7 @@ layout_mode = 2
 layout_mode = 2
 text = "Move Right:"
 
-[node name="RebindableAction" parent="HotkeysContainer/GridContainer/UIRight" instance=ExtResource("2")]
+[node name="RebindableAction" parent="HotkeysContainer/GridContainer/UIRight" instance=ExtResource("1_ee5m2")]
 layout_mode = 2
 text = "Right"
 action = "move_right"
@@ -81,7 +81,7 @@ layout_mode = 2
 layout_mode = 2
 text = "Interact:"
 
-[node name="RebindableAction" parent="HotkeysContainer/GridContainer/HBoxContainer" instance=ExtResource("2")]
+[node name="RebindableAction" parent="HotkeysContainer/GridContainer/HBoxContainer" instance=ExtResource("1_ee5m2")]
 layout_mode = 2
 action = "interact"
 
@@ -92,13 +92,13 @@ layout_mode = 2
 layout_mode = 2
 text = "Master Volume"
 
-[node name="VolumeSlider" parent="HotkeysContainer/VolumeContainer" instance=ExtResource("1")]
+[node name="VolumeSlider" parent="HotkeysContainer/VolumeContainer" instance=ExtResource("2_vxtyn")]
 layout_mode = 2
 value = 1.0
 feedback_sound_path = NodePath("AudioStreamPlayer")
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="HotkeysContainer/VolumeContainer/VolumeSlider"]
-stream = ExtResource("3")
+stream = ExtResource("3_vlk37")
 
 [node name="MuteContainer" type="HBoxContainer" parent="HotkeysContainer/VolumeContainer"]
 layout_mode = 2
@@ -108,7 +108,7 @@ layout_mode = 2
 size_flags_horizontal = 3
 text = "Mute"
 
-[node name="MuteButton" parent="HotkeysContainer/VolumeContainer/MuteContainer" instance=ExtResource("4_n5cma")]
+[node name="MuteButton" parent="HotkeysContainer/VolumeContainer/MuteContainer" instance=ExtResource("4_sokce")]
 layout_mode = 2
 
 [node name="VBoxContainer" type="VBoxContainer" parent="HotkeysContainer"]
@@ -125,7 +125,7 @@ layout_mode = 2
 layout_mode = 2
 text = "Game Difficulty"
 
-[node name="SettingSlider" parent="HotkeysContainer/VBoxContainer" instance=ExtResource("5_e2f0x")]
+[node name="SettingSlider" parent="HotkeysContainer/VBoxContainer" instance=ExtResource("5_jc3wj")]
 layout_mode = 2
 max_value = 2.0
 step = 0.5
@@ -137,7 +137,7 @@ config_key = &"difficulty"
 layout_mode = 2
 text = "Input Sensitivity"
 
-[node name="SettingSlider2" parent="HotkeysContainer/VBoxContainer" instance=ExtResource("5_e2f0x")]
+[node name="SettingSlider2" parent="HotkeysContainer/VBoxContainer" instance=ExtResource("5_jc3wj")]
 layout_mode = 2
 max_value = 2.0
 step = 0.5
@@ -149,7 +149,7 @@ config_key = &"sensitivity"
 layout_mode = 2
 text = "Brightness Levels"
 
-[node name="SettingSlider3" parent="HotkeysContainer/VBoxContainer" instance=ExtResource("5_e2f0x")]
+[node name="SettingSlider3" parent="HotkeysContainer/VBoxContainer" instance=ExtResource("5_jc3wj")]
 layout_mode = 2
 max_value = 2.0
 step = 0.5
