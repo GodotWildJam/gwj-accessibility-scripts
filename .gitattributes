@@ -2,8 +2,6 @@
 * text=auto eol=lf
 
 # Only include the addons folder when downloading from the Asset Library.
-/**        export-ignore
-/Motor/Basic/mappable-keys/addons    !export-ignore
-/Motor/Basic/mappable-keys/addons/** !export-ignore
-/Motor/Basic/mappable-keys/examples    !export-ignore
-/Motor/Basic/mappable-keys/examples/** !export-ignore
+/**           export-ignore
+/addons       !export-ignore
+/addons/**    !export-ignore
