@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://cf00wkvfngqp2"]
+
+[ext_resource type="Script" uid="uid://dcc1nru5grl3l" path="res://addons/gwj_accessibility_scripts/options/mute_button.gd" id="1_1reos"]
+
+[node name="MuteButton" type="CheckBox"]
+script = ExtResource("1_1reos")

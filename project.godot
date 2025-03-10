@@ -11,9 +11,13 @@ config_version=5
 [application]
 
 config/name="Godot Wild Jam Accessibility"
-run/main_scene="res://src/options/options_menu_example.tscn"
-config/features=PackedStringArray("4.3")
-config/icon="res://icon.png"
+run/main_scene="res://examples/scenes/options_menu_example.tscn"
+config/features=PackedStringArray("4.4")
+config/icon="uid://cppg6tuaet544"
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/gwj_accessibility_scripts/plugin.cfg")
 
 [input]
 

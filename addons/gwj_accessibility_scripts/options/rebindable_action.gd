@@ -7,7 +7,9 @@ const INPUT_CONFIG_SECTION = "Input"
 @export var action: String
 
 func _ready():
-	var default_input = InputMap.action_get_events(action)[0]
+	var action_events = InputMap.action_get_events(action)
+	if action_events.is_empty(): return
+	var default_input = action_events[0]
 	var config_value = Config.get_config(INPUT_CONFIG_SECTION, action, default_input)
 	_update_button_text(config_value)
 	if not toggled.is_connected(_on_toggled):
