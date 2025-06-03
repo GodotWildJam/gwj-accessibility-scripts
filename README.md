@@ -3,9 +3,33 @@ This repo is a culmination of the accessibility scripts created and provided by 
 
 These guidelines were inspired by the Game Accessibility Guidelines website: https://gameaccessibilityguidelines.com/full-list/
 
+## Installation
+
+### Godot Asset Library
+This package is available as a plugin, meaning it can be added to an existing project. 
+
+![Package Icon](/addons/gwj_accessibility_scripts/docs/gwj_mascot_80x80.png)  
+
+When editing an existing project:
+
+1.  Go to the `AssetLib` tab.
+2.  Search for "GWJ Accessibility Scripts".
+3.  Click on the result to open the plugin details.
+4.  Click to Download.
+5.  Check that contents are getting installed to `addons/` and `examples/` and there are no conflicts.
+6.  Click to Install.
+
+
+### GitHub
+
+1.  Download the latest release version from [GitHub](https://github.com/GodotWildJam/gwj-accessibility-scripts/archive/refs/heads/main.zip).  
+2.  Extract the contents of the archive.
+3.  Move the `addons/gwj_accessibility_scripts` folder into your project's `addons/` folder.  
+4.  Open/Reload the project.  
+
 ## Usage
 
-Copy the contents of `src/options` into a folder in your project. Then, instantiate the custom nodes into an option menu scene. 
+Instantiate the custom nodes into an option menu scene. 
 
 ### Volume Sliders
 
@@ -34,3 +58,8 @@ The `rebindlable_action.tscn` works similarly, in that it will create a button, 
 
 > [!WARNING]  
 > These buttons only allow one input per action. They are not recommended to use for rebinding the built-in `ui*` actions.
+
+## Links
+[Game Accessibility Guidelines](https://gameaccessibilityguidelines.com/full-list/)  
+[Godot Asset Library](https://godotengine.org/asset-library/asset/3718)  
+[License](/LICENSE.txt)  
