@@ -59,6 +59,48 @@ The `rebindlable_action.tscn` works similarly, in that it will create a button, 
 > [!WARNING]  
 > These buttons only allow one input per action. They are not recommended to use for rebinding the built-in `ui*` actions.
 
+## Additional Resources
+
+### Fonts
+
+There are fonts included in the `examples/assets` folder, namely: Atkinson Hyperlegible, DejaVu Sans, and OpenDyslexic.
+
+The list below contains fonts that are meant to help people read more easily, but they should not be considered a silver bullet solution. They're also permissively licensed, which means you are legally allowed to utilize these in your games.
+
+- [Atkinson Hyperlegible](https://www.brailleinstitute.org/freefont/) is designed _for_ blind or visually impaired people
+- [DejaVu Sans](https://www.fontsquirrel.com/fonts/dejavu-sans) is metrically compatible with Verdana, which is also a font that many people find easy to read, but this one's more freely licensed
+- [Intel One Mono](https://github.com/intel/intel-one-mono) was designed with the input of low-vision and legally blind developers
+- [Lexend](https://github.com/googlefonts/lexend) has some subsets with wider spacing to help people read easier, but your mileage may vary
+- [Open Sans](https://fonts.google.com/specimen/Open+Sans) retains good legibility at smaller sizes
+- [OpenDyslexic](https://github.com/antijingoist/opendyslexic) is specifically designed for users with dyslexia
+
+> [!NOTE]  
+> Designing a good-looking game user interface that's also accessible is challenging. It could be helpful to set up a feedback form for your players to get ideas on where to improve!
+
+### Colors
+
+Below is a list of resources that help generate colors, list color palettes, or educational articles.
+
+> [!WARNING]
+> A majority of these resources are tailored to web development, but most of the ideas present can still be adapted for creating video games since both are primarily accessed via screens.
+
+#### Generators
+
+- [Coolors](https://coolors.co/generate) is a color palette generator with additional tools such as color-blindness preview, color contrast checker, and more
+- [Inclusive Colors](https://www.inclusivecolors.com) is a complex color palette generator that allows for fine-tuning and checking color contrast
+- [Venngage](https://venngage.com/tools/accessible-color-palette-generator) generates accessible color palettes from different kinds of contrasts
+
+#### Premade Color Palettes
+
+- [Color Hunt](https://colorhunt.co/) is a site where users can submit color palette ideas
+- [Lospec](https://lospec.com/palette-list) is a website that lists color palettes for mainly pixel art, but can be used as inspiration
+- [Reasonable Colors](https://www.reasonable.work/colors/) is a color system that can help create an accessible color palette
+
+#### Articles
+
+- [WebAIM: Constrast and Color Accessibility](https://webaim.org/articles/contrast/) is an article that explains accessible color contrast
+- [Realities and Myths of Contrast and Color](https://www.smashingmagazine.com/2022/09/realities-myths-contrast-color/#improved-contrast-values) is an article that explains the evolving standards for color contrast accessibility
+
 ## Links
 [Game Accessibility Guidelines](https://gameaccessibilityguidelines.com/full-list/)  
 [Godot Asset Library](https://godotengine.org/asset-library/asset/3718)  
