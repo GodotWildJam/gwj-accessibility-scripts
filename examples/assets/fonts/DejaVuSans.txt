@@ -1,0 +1,3 @@
+DejaVu Sans
+Copyright (c) Bitstream, Tavmjong Bah
+Licensed under Bitstream Vera Fonts Copyright, Arev Fonts Copyright : https://dejavu-fonts.github.io/License.html
