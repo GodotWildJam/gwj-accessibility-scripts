@@ -74,9 +74,6 @@ The list below contains fonts that are meant to help people read more easily, bu
 - [Open Sans](https://fonts.google.com/specimen/Open+Sans) retains good legibility at smaller sizes
 - [OpenDyslexic](https://github.com/antijingoist/opendyslexic) is specifically designed for users with dyslexia
 
-> [!NOTE]  
-> Designing a good-looking game user interface that's also accessible is challenging. It could be helpful to set up a feedback form for your players to get ideas on where to improve!
-
 ### Colors
 
 Below is a list of resources that help generate colors, list color palettes, or educational articles.
