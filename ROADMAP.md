@@ -17,7 +17,6 @@ There is no 1-to-1 feature for every item listed in the guidelines. Each one in 
 - [x] Checkboxes for adjusting settings with boolean vaues (ie. muting audio channel)
 - [x] Adjustable slider for controlling sensitivity of settings with continuous values (ie. haptics).
 - [x] Provide a list of easily readable fonts.
-- [ ] Provide color palettes, textures, or examples to assist with developing for color blindness or vision impairment.
 
 ## Intermediate
 
@@ -25,6 +24,7 @@ There is no 1-to-1 feature for every item listed in the guidelines. Each one in 
 - [ ] Input remapping UI for multiple inputs.
 - [ ] Script for detecting game controllers.
 - [x] Keep settings persistent between runs.
+- [ ] Provide resources to assist with developing for color blindness or vision impairment.
 
 ## Advanced
 
