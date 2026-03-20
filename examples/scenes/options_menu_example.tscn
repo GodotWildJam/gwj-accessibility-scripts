@@ -19,73 +19,91 @@ theme_override_constants/margin_bottom = 20
 layout_mode = 2
 theme_override_constants/separation = 80
 
-[node name="GridContainer" type="GridContainer" parent="HotkeysContainer" unique_id=1337456617]
+[node name="VBoxContainer2" type="VBoxContainer" parent="HotkeysContainer" unique_id=1324277147]
+layout_mode = 2
+
+[node name="Label2" type="Label" parent="HotkeysContainer/VBoxContainer2" unique_id=2137926115]
+layout_mode = 2
+text = "Input Remapping"
+
+[node name="HSeparator" type="HSeparator" parent="HotkeysContainer/VBoxContainer2" unique_id=1586224888]
+layout_mode = 2
+
+[node name="GridContainer" type="GridContainer" parent="HotkeysContainer/VBoxContainer2" unique_id=1337456617]
 layout_mode = 2
 theme_override_constants/h_separation = 10
 theme_override_constants/v_separation = 10
 columns = 2
 
-[node name="UiUp" type="HBoxContainer" parent="HotkeysContainer/GridContainer" unique_id=1175645935]
+[node name="UiUp" type="HBoxContainer" parent="HotkeysContainer/VBoxContainer2/GridContainer" unique_id=1175645935]
 layout_mode = 2
 
-[node name="Label" type="Label" parent="HotkeysContainer/GridContainer/UiUp" unique_id=1485637622]
+[node name="Label" type="Label" parent="HotkeysContainer/VBoxContainer2/GridContainer/UiUp" unique_id=1485637622]
 layout_mode = 2
 text = "Move Up:"
 
-[node name="RebindableAction" parent="HotkeysContainer/GridContainer/UiUp" unique_id=388324616 instance=ExtResource("1_ee5m2")]
+[node name="RebindableAction" parent="HotkeysContainer/VBoxContainer2/GridContainer/UiUp" unique_id=388324616 instance=ExtResource("1_ee5m2")]
 layout_mode = 2
 keep_pressed_outside = true
 text = "Up"
 action = "move_up"
 
-[node name="UiDown" type="HBoxContainer" parent="HotkeysContainer/GridContainer" unique_id=332334622]
+[node name="UiDown" type="HBoxContainer" parent="HotkeysContainer/VBoxContainer2/GridContainer" unique_id=332334622]
 layout_mode = 2
 
-[node name="Label" type="Label" parent="HotkeysContainer/GridContainer/UiDown" unique_id=830625343]
+[node name="Label" type="Label" parent="HotkeysContainer/VBoxContainer2/GridContainer/UiDown" unique_id=830625343]
 layout_mode = 2
 text = "Move Down:"
 
-[node name="RebindableAction" parent="HotkeysContainer/GridContainer/UiDown" unique_id=569866971 instance=ExtResource("1_ee5m2")]
+[node name="RebindableAction" parent="HotkeysContainer/VBoxContainer2/GridContainer/UiDown" unique_id=569866971 instance=ExtResource("1_ee5m2")]
 layout_mode = 2
 text = "Down"
 action = "move_down"
 
-[node name="UILeft" type="HBoxContainer" parent="HotkeysContainer/GridContainer" unique_id=987550742]
+[node name="UILeft" type="HBoxContainer" parent="HotkeysContainer/VBoxContainer2/GridContainer" unique_id=987550742]
 layout_mode = 2
 
-[node name="Label" type="Label" parent="HotkeysContainer/GridContainer/UILeft" unique_id=450971215]
+[node name="Label" type="Label" parent="HotkeysContainer/VBoxContainer2/GridContainer/UILeft" unique_id=450971215]
 layout_mode = 2
 text = "Move Left:"
 
-[node name="RebindableAction" parent="HotkeysContainer/GridContainer/UILeft" unique_id=66255557 instance=ExtResource("1_ee5m2")]
+[node name="RebindableAction" parent="HotkeysContainer/VBoxContainer2/GridContainer/UILeft" unique_id=66255557 instance=ExtResource("1_ee5m2")]
 layout_mode = 2
 text = "Left"
 action = "move_left"
 
-[node name="UIRight" type="HBoxContainer" parent="HotkeysContainer/GridContainer" unique_id=1408132440]
+[node name="UIRight" type="HBoxContainer" parent="HotkeysContainer/VBoxContainer2/GridContainer" unique_id=1408132440]
 layout_mode = 2
 
-[node name="Label" type="Label" parent="HotkeysContainer/GridContainer/UIRight" unique_id=1839768842]
+[node name="Label" type="Label" parent="HotkeysContainer/VBoxContainer2/GridContainer/UIRight" unique_id=1839768842]
 layout_mode = 2
 text = "Move Right:"
 
-[node name="RebindableAction" parent="HotkeysContainer/GridContainer/UIRight" unique_id=518496604 instance=ExtResource("1_ee5m2")]
+[node name="RebindableAction" parent="HotkeysContainer/VBoxContainer2/GridContainer/UIRight" unique_id=518496604 instance=ExtResource("1_ee5m2")]
 layout_mode = 2
 text = "Right"
 action = "move_right"
 
-[node name="HBoxContainer" type="HBoxContainer" parent="HotkeysContainer/GridContainer" unique_id=1569700881]
+[node name="HBoxContainer" type="HBoxContainer" parent="HotkeysContainer/VBoxContainer2/GridContainer" unique_id=1569700881]
 layout_mode = 2
 
-[node name="Label" type="Label" parent="HotkeysContainer/GridContainer/HBoxContainer" unique_id=2039119953]
+[node name="Label" type="Label" parent="HotkeysContainer/VBoxContainer2/GridContainer/HBoxContainer" unique_id=2039119953]
 layout_mode = 2
 text = "Interact:"
 
-[node name="RebindableAction" parent="HotkeysContainer/GridContainer/HBoxContainer" unique_id=1172323877 instance=ExtResource("1_ee5m2")]
+[node name="RebindableAction" parent="HotkeysContainer/VBoxContainer2/GridContainer/HBoxContainer" unique_id=1172323877 instance=ExtResource("1_ee5m2")]
 layout_mode = 2
 action = "interact"
 
 [node name="VolumeContainer" type="VBoxContainer" parent="HotkeysContainer" unique_id=1119771400]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Label2" type="Label" parent="HotkeysContainer/VolumeContainer" unique_id=72356261]
+layout_mode = 2
+text = "Audio Settings"
+
+[node name="HSeparator" type="HSeparator" parent="HotkeysContainer/VolumeContainer" unique_id=1165128048]
 layout_mode = 2
 
 [node name="Label" type="Label" parent="HotkeysContainer/VolumeContainer" unique_id=920103120]
@@ -113,6 +131,7 @@ layout_mode = 2
 
 [node name="VBoxContainer" type="VBoxContainer" parent="HotkeysContainer" unique_id=989866365]
 layout_mode = 2
+size_flags_horizontal = 3
 
 [node name="Label2" type="Label" parent="HotkeysContainer/VBoxContainer" unique_id=2076742004]
 layout_mode = 2
@@ -156,5 +175,3 @@ step = 0.5
 value = 1.0
 config_section = &"Video"
 config_key = &"brightness"
-
-[editable path="HotkeysContainer/GridContainer/HBoxContainer/RebindableAction"]
