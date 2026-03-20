@@ -1,8 +1,8 @@
-[gd_scene load_steps=2 format=3 uid="uid://ce2r6mevl3dp2"]
+[gd_scene format=3 uid="uid://ce2r6mevl3dp2"]
 
 [ext_resource type="Script" uid="uid://d3kq44lbqrr8l" path="res://addons/gwj_accessibility_scripts/options/rebindable_action.gd" id="1"]
 
-[node name="Button" type="Button"]
+[node name="Button" type="Button" unique_id=256401294]
 offset_right = 21.0
 offset_bottom = 20.0
 toggle_mode = true
