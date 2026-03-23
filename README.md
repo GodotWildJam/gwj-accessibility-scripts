@@ -72,7 +72,7 @@ The list below contains fonts that are meant to help people read more easily, bu
 - [Intel One Mono](https://github.com/intel/intel-one-mono) was designed with the input of low-vision and legally blind developers
 - [Lexend](https://github.com/googlefonts/lexend) has some subsets with wider spacing to help people read easier, but your mileage may vary
 - [Open Sans](https://fonts.google.com/specimen/Open+Sans) retains good legibility at smaller sizes
-- [OpenDyslexic](https://github.com/antijingoist/opendyslexic) is specifically designed for users with dyslexia
+- [OpenDyslexic](https://opendyslexic.org/) is specifically designed for users with dyslexia
 
 ### Colors
 
